@@ -1,0 +1,101 @@
+#home {
+
+    background-image: url('./charles-postiaux-TnUG2pWraPE-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#home aside {
+
+    width: 50%;
+    margin: auto;
+}
+
+#home aside p {
+
+    line-height: 6vh;
+    letter-spacing: .2rem;
+    font-size: 3.85vh;
+
+}
+
+#home aside button {
+
+    position: relative;
+    width: 65%;
+    padding: 4vh;
+    text-transform: uppercase;
+    border-radius: 50px;
+    background: none;
+    margin-top: 4vh;
+    font-size: 4vh;
+    border: 2px solid rgb( 30,30,30 );
+    transition: .15s linear all;
+    cursor: pointer;
+}
+
+@keyframes arrow {
+
+    from {
+        content: "\f054\f054\f054";
+    }
+    50% {
+        content: "\f054\f054";
+    }
+    75% {
+        content: "\f054";
+        
+    }
+    to {
+        
+        content: "";
+    }
+}
+
+#home aside button:hover::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f054\f054\f054";
+    animation: arrow .85s linear infinite alternate forwards;
+    position: absolute;
+    right: 10%;
+
+}
+
+#home aside button:hover {
+    
+    background: rgba( 0,0,0,.3 );
+    width: 100%;
+    color: #fff;
+    border-color: #fff;
+}
+
+@media screen and ( max-width: 1100px ) , ( max-height:600px ) {
+        
+    #home aside p {
+
+        line-height: 4vh;
+        letter-spacing: .2rem;
+        font-size: 3vh;
+
+    }
+       
+    #home aside {
+
+        width: 90%;
+    }
+}
+
+@media screen and ( max-width:650px ) , ( max-height:550px ) {
+     
+    
+    #home aside {
+
+        width: 96%;
+    }
+
+    #home aside button {
+
+        font-size: 3vh;
+    }
+}
