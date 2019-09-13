@@ -1,0 +1,98 @@
+header {
+
+    max-width: 400px;
+    min-width: 225px;
+
+    /* check */
+    /* background: #eee; */
+    background-image: url('https://html5up.net/uploads/demos/hyperspace/assets/css/images/intro.svg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #2c3e50;
+}
+
+header h1 {
+
+    margin: 0;
+    padding: 1.5vh 0;
+    background: rgb(230,230,230);
+    transition: .3s linear all;
+}
+
+header h1:hover {
+    
+    background: rgba(230,230,230,.72);
+
+}
+
+header ul {
+
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+header ul li {
+
+    margin: 8vh 0;
+}
+
+header ul li a {
+
+    padding: 1.5vh 2vh;
+}
+header h1 a {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 figure {
+
+    margin: 0;
+}
+
+header h1 a figure {
+
+    display: inline-block;
+    padding: 2vh;
+}
+
+@media screen and ( max-width: 600px ) , (max-height: 520px) {
+
+    header {
+
+        min-width: 100%;
+        width: 100%;
+    }
+
+    #logo-header {
+
+        width: 11vh;
+        height: auto;
+    }
+
+    header h1 {
+
+        background: none;
+    }
+
+    header h1:hover {
+
+        background: none;
+    }
+
+    header h1 figure {
+
+        background: #fff;
+        border-radius: 50px;
+    }
+
+
+    header {
+
+        height: 162px;
+    }
+}
