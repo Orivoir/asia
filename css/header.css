@@ -1,7 +1,7 @@
 header {
     max-width: 400px;
     min-width: 225px;
-    /* z-index: 100; */
+    /* z-index: 50; */
 
     /* check */
     /* background: #eee; */
@@ -60,7 +60,7 @@ header h1 a figure {
     padding: 2vh;
 }
 
-@media screen and ( max-width: 600px ) , (max-height: 520px) {
+@media screen and ( max-width: 750px ) , (max-height: 520px) {
 
     header {
 
@@ -94,5 +94,14 @@ header h1 a figure {
     header {
 
         height: 170px;
+    }
+}
+
+@media screen and (max-width: 460px) , ( max-height: 500px ) {
+
+    header {
+
+        padding: 4vh;
+        height: auto;
     }
 }

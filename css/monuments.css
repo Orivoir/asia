@@ -2,6 +2,36 @@
     margin: 15vh 0;
 }
 
+
+#monuments #learn-more img {
+
+    width: 250px;
+}
+
+#monuments #learn-more {
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba( 0,0,0,.94 );
+    z-index: 200;
+    color: #fff;
+}
+
+#main-learn-more {
+
+    width: 50%;
+    min-width: 320px;
+    margin: auto;
+}
+
+.hide {
+    opacity: .0;
+    transform: translateX(-100%);
+}
+
 #monuments ul li section {
     display: flex;
     justify-content: space-around;
@@ -76,3 +106,45 @@
 
     transform: scale( 1.25 );
 }
+
+@media screen and ( max-width: 1050px ) , (max-height: 620px) {
+
+    #monuments ul li section div h2 {
+
+        font-size: 3vh;
+        font-weight: normal;
+    }
+    
+    #monuments ul li section figure {
+
+        width: 65%;
+        margin: auto;
+        min-width: 285px;
+    }
+
+}
+
+@media screen and ( max-width: 750px ) , (max-height: 520px) {
+
+    
+    #monuments ul li section ,
+    #monuments ul li.even section {
+
+        flex-direction: column;
+    }
+
+        
+    #monuments ul li section div:nth-child( 1 ) {
+
+        width: 50%;
+        min-width: 200px;
+        margin: auto;
+    }
+
+    
+    #monuments ul li section figure img {
+
+        width: 100%;
+    }
+}
+

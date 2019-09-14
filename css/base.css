@@ -18,6 +18,12 @@ html , body , #content-group , main , header {
     display: flex;
 }
 
+a {
+
+    text-decoration: none;
+    color: rgb(131, 123, 20);
+}
+
 ul {
 
     list-style: none;
@@ -26,6 +32,41 @@ ul {
 article h2 {
 
     margin: 0;
+}
+
+.close {
+
+    cursor: pointer;
+    background: rgba( 255,255,255 , .13 );
+    padding: .85vh 1.2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    transition: .13s linear all;
+}
+
+.close i {
+
+    font-size: 30px;
+    transition: .2s linear all;
+}
+
+.hide {
+
+    display: none!important;
+}
+
+.close:hover {
+    
+    background: rgba( 255,255,255 , .5 );
+}
+
+.close:hover i {
+
+    transform: scale( 1.25 );
+    color: #863a36;
 }
 
 article , .wrap-article {
@@ -60,7 +101,7 @@ article h2 {
 
 }
 
-@media screen and ( max-width: 600px ) , (max-height: 520px) {
+@media screen and ( max-width: 750px ) , (max-height: 520px) {
 
     .flex-group {
 

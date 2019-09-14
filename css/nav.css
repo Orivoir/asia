@@ -23,6 +23,7 @@ nav:hover ul li {
 
     opacity: 1;
     text-align: center;
+    /* z-index: 22; */
 }
 
 nav::before {
@@ -33,12 +34,17 @@ nav::before {
     top:0;
     width: 100%;
     height: 100%;
-    /* z-index: -2; */
+    /* z-index: 20; */
 }
 
 nav.bottom::before {
     
     background: #863a36;
+}
+
+nav.bottom {
+
+    top: 0;
 }
 
 nav ul li {
@@ -93,7 +99,7 @@ nav ul li a:hover::before {
     background: #ca9c1d;
 }
 
-i.fas {
+nav i.fas {
     display: inline-block;
 }
 
@@ -110,22 +116,26 @@ nav ul li a.active::before {
     opacity: 1;
 }
 
-@media screen and ( max-width: 700px ) , (max-height: 550px) {
+@media screen and ( max-width: 950px ) , (max-height: 550px) {
 
     nav {
 
         width: 300px;
         height: auto;
     }
+    nav ul li a {
 
-    nav:hover {
+        font-size: 2vh;
+    }
 
-        background: transparent;
+    nav ul li {
+
+        text-align: center;
     }
 }
 
 
-@media screen and ( max-width: 600px ) , (max-height: 520px) {
+@media screen and ( max-width: 750px ) , (max-height: 520px) {
 
     nav {
 
@@ -135,6 +145,8 @@ nav ul li a.active::before {
     
     nav:hover {
         width: 100%;
+        
+        background: transparent;
     }
 
     nav::before {
@@ -150,7 +162,7 @@ nav ul li a.active::before {
         align-items: space-around;
     }
 
-    i.fas {
+    nav i.fas {
 
         display: none;
     }
@@ -176,4 +188,12 @@ nav ul li a.active::before {
         color: #fff;
     }
     
+}
+
+@media screen and (max-width: 460px) , ( max-height: 500px ) {
+
+    nav ul {
+
+        flex-direction: column;
+    }
 }

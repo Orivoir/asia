@@ -27,12 +27,15 @@ document.addEventListener('DOMContentLoaded' , () => {
 
     window.addEventListener('scroll' , e => {
 
-        if( window.scrollY > (  'header'.js().offsetHeight - 'nav'.js().offsetHeight ) ) {
-
-            'nav'.js().classList.add('bottom');
+        const [header , nav] = [ 'header'.js() , 'nav'.js() ]
+        
+        if( window.scrollY > ( header.offsetHeight / 2 ) ) {
+            
+            nav.classList.add('bottom');
+            
         } else {
             
-            'nav'.js().classList.remove('bottom');
+            nav.classList.remove('bottom');
         }
 
     } ) ;
