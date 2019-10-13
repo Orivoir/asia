@@ -1,0 +1,70 @@
+footer {
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #863a36;
+    padding: 2vh 0;
+    text-align: center;
+    color: #fff;
+    letter-spacing: .25rem;
+    font-size: 1.55rem;
+    z-index: 99999;
+}
+
+footer i {
+
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    font-size: 1.7rem;
+    transition: .2s linear all;
+    cursor: pointer;
+}
+
+footer i:hover {
+
+    transform: scale( 1.2 );
+}
+
+@media screen and ( max-width: 1100px ) {
+
+    footer i {
+
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    footer i:hover {
+
+        transform: scale( 1 ) translateY(-50%);
+    }
+
+
+    footer {
+
+        font-size: 1.2rem;
+        letter-spacing: .16rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    footer span {
+
+        display: none;
+    }
+}
+
+@media screen and (max-width: 585px) {
+
+    footer i {
+
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: .9rem;
+    }
+}

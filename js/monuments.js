@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded' , () => {
 
                 '#learn-more figure img'.js().src = src;
                 return;
-            }
+            }w
 
             
 
